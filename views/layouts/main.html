@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-next-page/index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>amp-next-page</title>
+  <script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-1.0.js"></script>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: grey;
+      position: fixed;
+      top: 0;
+      overflow: hidden;
+      z-index: 1;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .spacer {
+      height: 120px;
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .blue {
+      background-color: #005AF0;
+    }
+
+    .yellow {
+      background-color: #FFC300;
+    }
+
+    .green {
+      background-color: #A5D454;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 1vh;
+      border: solid black 1px;
+    }
+
+    .content {
+      margin-top: 90px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: grey;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .amp-next-page-visible .content {
+      margin-top: 0;
+    }
+
+    .my-custom-separator {
+      background-color: #CB3CDF;
+      height: 5px;
+    }
+  </style>
+</head>
+
+<body class="center">
+  <header next-page-hide>
+    <h1>
+      Header
+    </h1>
+  </header>
+  <main>
+    {{{ body }}}
+  </main>
+  <amp-next-page>
+    <script type="application/json">
+        [
+          {
+            "image": "https://cdn.glitch.com/559d7229-35e7-44e0-87dd-cec0ff862884%2Fyellowlogo.png?v=1586823149053",
+            "title": "Yellow Divs!",
+            "url": "article1"
+          },
+          {
+            "image": "https://cdn.glitch.com/559d7229-35e7-44e0-87dd-cec0ff862884%2Fgreenlogo.png?v=1586823156070",
+            "title": "Seeing Green!",
+            "url": "article2"
+          },
+          {
+            "image": "https://i.picsum.photos/id/573/200/300.jpg?hmac=3xlTAEXK1dTOXmwZnXwdOV0tTFX1rbg_wL_cava2HfE",
+            "title": "Seeing Image!",
+            "url": "article3"
+          }
+        ]
+      </script>
+    <div separator class="my-custom-separator">
+    </div>
+    <footer footer next-page-hide>
+      <h1>
+        Footer
+      </h1>
+    </footer>
+  </amp-next-page>
+</body>
+
+</html>

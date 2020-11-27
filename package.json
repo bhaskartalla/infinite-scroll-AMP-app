@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "express-handlebars": "^3.0.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "license": "MIT"
+}

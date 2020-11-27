@@ -1,0 +1,19 @@
+{
+  "pages": [
+    {
+      "image": "https://cdn.glitch.com/559d7229-35e7-44e0-87dd-cec0ff862884%2Fyellowlogo.png?v=1586823149053",
+      "title": "Yellow Divs!",
+      "url": "article1"
+    },
+    {
+      "image": "https://cdn.glitch.com/559d7229-35e7-44e0-87dd-cec0ff862884%2Fgreenlogo.png?v=1586823156070",
+      "title": "Seeing Green!",
+      "url": "article2"
+    },
+    {
+      "image": "https://cdn.glitch.com/559d7229-35e7-44e0-87dd-cec0ff862884%2Fgreenlogo.png?v=1586823156070",
+      "title": "Seeing Image!",
+      "url": "article3"
+    }
+  ]
+}
